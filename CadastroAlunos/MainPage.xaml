@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CadastroAlunos.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="25"
+            BackgroundColor="White">
+
+            <Label
+                x:Name="lblRA"
+                Text="Registro acadêmico"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Frame
+                BorderColor="Black"
+                BackgroundColor="White"
+                Padding="2">
+                <Entry
+                    x:Name="etrRA"
+                    TextColor="Black"
+                    FontSize="18"/>
+            </Frame>
+
+            <Label
+                x:Name="lblNome"
+                Text="Nome completo"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Frame
+                BorderColor="Black"
+                BackgroundColor="White"
+                Padding="2">
+                <Entry
+                    x:Name="etrNome"
+                    TextColor="Black"
+                    FontSize="18"/>
+            </Frame>
+
+            <Label
+                x:Name="lblDataN"
+                Text="Data de nascimento"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Frame
+                BorderColor="Black"
+                BackgroundColor="White"
+                Padding="2">
+                <DatePicker
+                    x:Name="etrDataN"
+                    TextColor="Black"
+                    FontSize="18"/>
+            </Frame>
+
+            <Label
+                x:Name="lblSexo"
+                Text="Sexo"
+                TextColor="Black"
+                FontSize="20"/>
+            <Frame
+                BorderColor="Black"
+                BackgroundColor="White"
+                Padding="2">
+                <Picker
+                    x:Name="pkrSexo"
+                    Title="Selecione o sexo"
+                    TextColor="Black"
+                    FontSize="18">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Masculino</x:String>
+                            <x:String>Feminino</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Frame>
+
+            <Label
+                x:Name="lblEmail"
+                Text="Email"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Frame
+                BorderColor="Black"
+                BackgroundColor="White"
+                Padding="2">
+                <Entry
+                    x:Name="etrEmail"
+                    TextColor="Black"
+                    FontSize="18"/>
+            </Frame>
+
+            <Label
+                x:Name="lblCPF"
+                Text="CPF"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Frame
+                BorderColor="Black"
+                BackgroundColor="White"
+                Padding="2">
+                <Entry
+                    x:Name="etrCPF"
+                    TextColor="Black"
+                    FontSize="18"/>
+            </Frame>
+
+            <Label
+                x:Name="lblRG"
+                Text="RG"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Frame
+                BorderColor="Black"
+                BackgroundColor="White"
+                Padding="2">
+                <Entry
+                    x:Name="etrRG"
+                    TextColor="Black"
+                    FontSize="18"/>
+            </Frame>
+
+            <Label
+                x:Name="lblAuxTrans"
+                Text="Auxílio transporte ?"
+                TextColor="Black"
+                FontSize="20"/>
+            <HorizontalStackLayout>
+                <CheckBox
+                    x:Name="CkbAuxTrans"
+                    Color="Black"
+                    Scale="1.5"/>
+                <Label
+                    x:Name="lblCkb"
+                    Text="Sim"
+                    TextColor="Black"
+                    FontSize="18"
+                    HeightRequest="25"/>
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="btnCadastrar"
+                Text="Cadastrar"
+                BorderWidth="2"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"
+                FontSize="20"/>
+
+            <Button
+                x:Name="btnLimpar"
+                Text="Limpar"
+                BorderWidth="2"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"
+                FontSize="20"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
