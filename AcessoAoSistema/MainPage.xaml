@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AcessoAoSistema.MainPage">
+    <ScrollView>
+        <Grid
+            BackgroundColor="White"
+            Padding="20"
+            RowSpacing="5"
+            ColumnSpacing="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="Auto"/>
+                <RowDefinition
+                    Height="Auto"/>
+                <RowDefinition
+                    Height="60"/>
+                <RowDefinition
+                    Height="Auto"/>
+                <RowDefinition
+                    Height="60"/>
+                <RowDefinition
+                    Height="100"/>
+                <RowDefinition
+                    Height="Auto"/>
+                <RowDefinition
+                    Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition
+                    Width="*"/>
+                <ColumnDefinition
+                    Width="100"/>
+            </Grid.ColumnDefinitions>
+
+            <Image
+                Source="logo_unianchieta.jpg"
+                HeightRequest="100"
+                Aspect="AspectFit"
+                SemanticProperties.Description="logo do unianchieta" 
+                Grid.ColumnSpan="2"/>
+
+            <Label
+                x:Name="lblRA"
+                Text="RA, Email ou CPF"
+                TextColor="Black"
+                FontSize="10"
+                Grid.Row="1"/>
+
+            <Entry
+                x:Name="etrRa"
+                Grid.Row="2"
+                HeightRequest="35"
+                TextColor="Black"
+                FontSize="10"
+                BackgroundColor="White"/>
+
+            <Label
+                x:Name="lblSenha"
+                Text="Senha"
+                TextColor="Black"
+                FontSize="10"
+                Grid.Row="3"/>
+
+
+            <Entry
+                x:Name="etrSenha"
+                Grid.Row="4"
+                HeightRequest="35"
+                Placeholder="Insira sua senha"
+                TextColor="Black"
+                FontSize="10"
+                BackgroundColor="White"/>
+
+            <Button
+                x:Name="btnLimpar1"
+                CornerRadius="3"
+                Grid.Column="1"
+                Grid.Row="2"
+                Text="Limpar"
+                TextColor="Black"
+                FontSize="10"
+                HeightRequest="35"
+                BorderWidth="1"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"/>
+
+            <Button
+                x:Name="btnLimpar2"
+                CornerRadius="3"
+                Grid.Column="1"
+                Grid.Row="4"
+                Text="Limpar"
+                TextColor="Black"
+                FontSize="10"
+                HeightRequest="35"
+                BorderWidth="1"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"/>
+
+            <Button
+                x:Name="btnAcessar"
+                CornerRadius="3"
+                Grid.Row="5"
+                Grid.ColumnSpan="2"
+                HeightRequest="35"
+                Text="Acessar"
+                TextColor="Black"
+                FontSize="12"
+                BorderWidth="1"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"/>
+
+            <Label
+                x:Name="lblNPossui"
+                Grid.Row="6"
+                Grid.ColumnSpan="2"
+                FontSize="10"
+                HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span
+                            Text="Não possui conta ? Cadastre-se " 
+                            TextColor="Black"/>
+                        <Span 
+                            Text="aqui" 
+                            TextColor="Blue"
+                            TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label
+                x:Name="lblEsqSenha"
+                Grid.Row="7"
+                Grid.ColumnSpan="2"
+                FontSize="10"
+                HorizontalOptions="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span
+                            Text="Esqueceu a senha ? Clique " 
+                            TextColor="Black"/>
+                        <Span 
+                            Text="aqui" 
+                            TextColor="Blue"
+                            TextDecorations="Underline"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
