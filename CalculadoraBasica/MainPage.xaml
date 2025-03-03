@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculadoraBasica.MainPage">
+
+    <Grid
+        Padding="20"
+        ColumnSpacing="15"
+        BackgroundColor="White">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition
+                Width="100"/>
+            <ColumnDefinition
+                Width="100"/>
+            <ColumnDefinition
+                Width="110"/>
+        </Grid.ColumnDefinitions>
+
+        <VerticalStackLayout
+            Spacing="25">
+            <Label
+                x:Name="lblV1"
+                Text="Valor 1"
+                TextColor="Black"
+                FontSize="18"/>
+
+            <Frame
+                HeightRequest="50"
+                BackgroundColor="White">
+                <Entry
+                    x:Name="etrV1"
+                    HeightRequest="50"
+                    TextColor="Black"
+                    FontSize="15"/>
+            </Frame>
+
+            <Label
+                x:Name="lblV3"
+                Text="Valor 3"
+                TextColor="Black"
+                FontSize="18"/>
+
+            <Frame
+                HeightRequest="50"
+                BackgroundColor="White">
+                <Entry
+                    x:Name="etrV3"
+                    HeightRequest="50"
+                    TextColor="Black"
+                    FontSize="15"/>
+            </Frame>
+
+            <Label
+                x:Name="lblV5"
+                Text="Valor 5"
+                TextColor="Black"
+                FontSize="18"/>
+
+            <Frame
+                HeightRequest="50"
+                BackgroundColor="White">
+                <Entry
+                    x:Name="etrV5"
+                    HeightRequest="50"
+                    TextColor="Black"
+                    FontSize="15"/>
+            </Frame>
+
+            <Label
+                x:Name="lblV7"
+                Text="Valor 7"
+                TextColor="Black"
+                FontSize="18"/>
+
+            <Frame
+                HeightRequest="50"
+                BackgroundColor="White">
+                <Entry
+                    x:Name="etrV7"
+                    HeightRequest="50"
+                    TextColor="Black"
+                    FontSize="15"/>
+            </Frame>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            Spacing="25"
+            Grid.Column="1">
+            <Label
+                x:Name="lblV2"
+                Text="Valor 2"
+                TextColor="Black"
+                FontSize="18"/>
+
+            <Frame
+                HeightRequest="50"
+                BackgroundColor="White">
+                <Entry
+                    x:Name="etrV2"
+                    HeightRequest="50"
+                    TextColor="Black"
+                    FontSize="15"/>
+            </Frame>
+
+            <Label
+                x:Name="lblV4"
+                Text="Valor 4"
+                TextColor="Black"
+                FontSize="18"/>
+
+            <Frame
+                HeightRequest="50"
+                BackgroundColor="White">
+                <Entry
+                    x:Name="etrV4"
+                    HeightRequest="50"
+                    TextColor="Black"
+                    FontSize="15"/>
+            </Frame>
+
+            <Label
+                x:Name="lblV6"
+                Text="Valor 6"
+                TextColor="Black"
+                FontSize="18"/>
+
+            <Frame
+                HeightRequest="50"
+                BackgroundColor="White">
+                <Entry
+                    x:Name="etrV6"
+                    HeightRequest="50"
+                    TextColor="Black"
+                    FontSize="15"/>
+            </Frame>
+
+            <Label
+                x:Name="lblV8"
+                Text="Valor 8"
+                TextColor="Black"
+                FontSize="18"/>
+
+            <Frame
+                HeightRequest="50"
+                BackgroundColor="White">
+                <Entry
+                    x:Name="etrV8"
+                    HeightRequest="50"
+                    TextColor="Black"
+                    FontSize="15"/>
+            </Frame>
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            Grid.Column="2"
+            Spacing="80"
+            HeightRequest="610">
+            <Button
+                x:Name="btnSomar"
+                Text="Somar"
+                FontSize="15"
+                BorderWidth="1"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"/>
+
+            <Button
+                x:Name="btnSubtrair"
+                Text="Subtrair"
+                FontSize="15"
+                BorderWidth="1"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"/>
+
+            <Button
+                x:Name="btnMultiplicar"
+                Text="Multiplicar"
+                FontSize="15"
+                BorderWidth="1"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"/>
+
+            <Button
+                x:Name="btnDividir"
+                Text="Dividir"
+                FontSize="15"
+                BorderWidth="1"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"/>
+        </VerticalStackLayout>
+
+    </Grid>
+    
+</ContentPage>

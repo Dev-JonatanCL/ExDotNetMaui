@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalcularDiasVividos.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30"
+            Spacing="25"
+            BackgroundColor="White">
+
+            <Label
+                x:Name="lblNome"
+                Text="Nome"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Frame
+                BorderColor="Black"
+                BackgroundColor="White"
+                Padding="2">
+                <Entry
+                    x:Name="etrNome"
+                    TextColor="Black"/>
+            </Frame>
+
+            <Label
+                x:Name="lblIdade"
+                Text="Idade atual"
+                TextColor="Black"
+                FontSize="20"/>
+
+            <Frame
+                BorderColor="Black"
+                BackgroundColor="White"
+                Padding="2">
+                <Entry
+                    x:Name="etrIdade"
+                    TextColor="Black"/>
+            </Frame>
+
+            <Button
+                x:Name="btnCDV"
+                Text="Calcular dias vividos"
+                BorderWidth="2"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"
+                FontSize="20"/>
+
+            <Button
+                x:Name="btnLimpar"
+                Text="Limpar campos"
+                BorderWidth="2"
+                BorderColor="Black"
+                BackgroundColor="#d9d9d9"
+                FontSize="20"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
